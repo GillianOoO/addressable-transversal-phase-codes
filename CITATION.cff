@@ -1,7 +1,7 @@
 cff-version: 1.2.0
 message: "Please cite the accompanying manuscript and this code archive."
 type: software
-title: "Code and construction data for Near-Optimal Rate–Distance Bounds for Cyclic-Digit Encodings with Addressable Transversal Phase Gates"
+title: "Code and construction data for Near-Optimal Rate–Distance Bounds for Cyclic Encodings with Addressable Transversal Phase Gates"
 authors:
   - family-names: Wu
     given-names: Bujiao
