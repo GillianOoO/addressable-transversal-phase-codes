@@ -1,6 +1,6 @@
 # Addressable transversal phase codes
 
-Code and construction data accompanying **Substantially Improved Rate and Distance for Addressable Transversal Phase Gates**, by **Bujiao Wu, Tongyin Lin, and Bin Cheng**.
+Code and construction data accompanying **Near-Optimal Rate–Distance Bounds for Cyclic-Digit Encodings with Addressable Transversal Phase Gates**, by **Bujiao Wu, Tongyin Lin, and Bin Cheng**.
 
 This repository contains the random quadratic-phase construction at **h = 3**, the defining matrices of the two finite examples, and the native-operation resource summary for the Q48 encoder. The implementation works over Z/8Z and supports fully addressable transversal T powers. The manuscript establishes the construction for general fixed h; the software deposited here implements h = 3.
 
