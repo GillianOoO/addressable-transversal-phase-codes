@@ -1,0 +1,2 @@
+# Runtime used for preparation: CPython 3.14.7 on Windows.
+numpy==2.5.2

@@ -1,0 +1,17 @@
+{
+  "source_bundle_sha256": "c7b31cfcbcaf54c01d1d71606c5e920266fa31c6225a32a8d039f8aa25da47e8",
+  "inputs": [
+    "small_addressable_T_examples.json"
+  ],
+  "adaptations": [
+    "U_mod8 renamed B_mod8 in exported instance data.",
+    "Only defining matrices, basic parameters and construction settings are exported.",
+    "Ring arithmetic and exact rejection logic reused; imports and command entry points adapted.",
+    "The historical weight-matching witness filter is omitted; both archived examples were the first rejection-test acceptances and are checked by seeded reproduction."
+  ],
+  "source_code_sha256": {
+    "construct_certified_ring_family.py": "2c396edfc9ae1d0889d52d6a38e0dad1ba365ee36ba42595a6f3854ce623450e",
+    "current_algorithm_verifier.py": "f8fd5b757fb285201f2ee9fe74b7bffa5234aafa6280a30307e1405eea34de65",
+    "construct_small_addressable_examples.py": "0a2e7da173626eaf2bdda40f0ebbbab1869b3a109f3722d6a805757b1bd1059d"
+  }
+}

@@ -1,0 +1,84 @@
+{
+  "algorithm": "sha256",
+  "excludes": [
+    ".git",
+    ".venv",
+    "__pycache__",
+    "generated",
+    "MANIFEST.json"
+  ],
+  "files": {
+    ".gitignore": {
+      "sha256": "2ded64961a07497a970ae566be2917727a9aa1352521fa8644805459d9284498",
+      "bytes": 61
+    },
+    "citation.bib": {
+      "sha256": "2227ec5808a781adc8f24c569b3ed4c307503b43e90c81e77e4855630ef7db72",
+      "bytes": 401
+    },
+    "CITATION.cff": {
+      "sha256": "710cf5c163ae8caa8505a52d0831479ca3da54b2945303a960970022fdeef65c",
+      "bytes": 514
+    },
+    "construct.py": {
+      "sha256": "0205a4448399058b44bb2d9a3f4e6462fc466657b751b0f7f154c5f0139b3fef",
+      "bytes": 264
+    },
+    "data/finite/q48/code.json": {
+      "sha256": "a9d26c056d074f146b53da407f0a72f2c85822f8e2b2eb5186b5118a6356dc30",
+      "bytes": 5924
+    },
+    "data/finite/q90/code.json": {
+      "sha256": "33ab5df02921041c8406b9295174b361b67026b2db22084bcb8851ca350152fa",
+      "bytes": 19196
+    },
+    "data/source_provenance.json": {
+      "sha256": "c1f313d22644e08efdb73d88961d735815e4bbc3ec70f4b2a296e6b43639a087",
+      "bytes": 969
+    },
+    "LICENSE": {
+      "sha256": "2074d36e95e761a62de07a4c8937c212b5efd6fe03bc748de859adc8c7cc4cc1",
+      "bytes": 1094
+    },
+    "README.md": {
+      "sha256": "62040d54c5a43598bd164d5b70e591dcb815d1c296a9b7db084d444da1b74b2d",
+      "bytes": 8266
+    },
+    "requirements-tested.txt": {
+      "sha256": "35a5f3e70d203be60e756429541aa29bd7e938d0453d4c47fb4e26253f0121df",
+      "bytes": 72
+    },
+    "requirements.txt": {
+      "sha256": "a83a2a4ed7ab2e022b9b8a83cfa2b8cf52cc243006c597e8b96f90a8365590ac",
+      "bytes": 12
+    },
+    "results/validation.json": {
+      "sha256": "cabc7caebdac30ddafb2d34a0f3fdb45aeb4df6c1e0db9765a76ca58ff5f5faf",
+      "bytes": 4456
+    },
+    "src/core/__init__.py": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "src/core/ring8.py": {
+      "sha256": "c5713dfca7cd660884b890baadcc87e2565e41013ba497fe444ece3c44a26e0e",
+      "bytes": 7803
+    },
+    "src/exponential/__init__.py": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "src/exponential/construction.py": {
+      "sha256": "57e80d4828490e7d3afb7f8ef1e4f832d5219790304f37e6be1f898c8c3d3f41",
+      "bytes": 8620
+    },
+    "src/verification/__init__.py": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "src/verification/rejection.py": {
+      "sha256": "ce5328566c236fb5de6242dc93f7ad470b340b247b03462db1f81d2bb08e324a",
+      "bytes": 15531
+    }
+  }
+}

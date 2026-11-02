@@ -1,0 +1,151 @@
+{
+  "scope": "Construction reproduction and rejection checks; no additional logical-witness search or circuit simulation.",
+  "clean_directory": true,
+  "invoked_from_outside_repository": true,
+  "commands": [
+    {
+      "command": "python construct.py reproduce --output-dir generated/reproduced",
+      "exit_code": 0,
+      "seconds": 2.324767,
+      "result": {
+        "passed": true,
+        "seed": 202610011,
+        "examples": [
+          {
+            "name": "q48",
+            "accepted_trial": 2,
+            "distance_lower_bound_checked": 5,
+            "matches_deposited_matrices": true,
+            "seconds": 0.02737
+          },
+          {
+            "name": "q90",
+            "accepted_trial": 1,
+            "distance_lower_bound_checked": 7,
+            "matches_deposited_matrices": true,
+            "seconds": 2.084432
+          }
+        ]
+      }
+    },
+    {
+      "command": "python construct.py verify",
+      "exit_code": 0,
+      "seconds": 2.347338,
+      "result": {
+        "passed": true,
+        "python": "3.14.7",
+        "numpy": "2.5.2",
+        "examples": [
+          {
+            "name": "q48",
+            "passed": true,
+            "distance_lower_bound_checked": 5,
+            "matrix_and_addressing_identities_checked": true,
+            "ensemble_failure_bound_exact": "48719230293/17179869184",
+            "ensemble_sufficient_condition_holds": false,
+            "seconds": 0.024703
+          },
+          {
+            "name": "q90",
+            "passed": true,
+            "distance_lower_bound_checked": 7,
+            "matrix_and_addressing_identities_checked": true,
+            "ensemble_failure_bound_exact": "20108342438410359691/73786976294838206464",
+            "ensemble_sufficient_condition_holds": true,
+            "seconds": 2.111606
+          }
+        ]
+      }
+    },
+    {
+      "command": "python construct.py verify --input-dir generated/reproduced",
+      "exit_code": 0,
+      "seconds": 2.354622,
+      "result": {
+        "passed": true,
+        "python": "3.14.7",
+        "numpy": "2.5.2",
+        "examples": [
+          {
+            "name": "q48",
+            "passed": true,
+            "distance_lower_bound_checked": 5,
+            "matrix_and_addressing_identities_checked": true,
+            "ensemble_failure_bound_exact": "48719230293/17179869184",
+            "ensemble_sufficient_condition_holds": false,
+            "seconds": 0.024903
+          },
+          {
+            "name": "q90",
+            "passed": true,
+            "distance_lower_bound_checked": 7,
+            "matrix_and_addressing_identities_checked": true,
+            "ensemble_failure_bound_exact": "20108342438410359691/73786976294838206464",
+            "ensemble_sufficient_condition_holds": true,
+            "seconds": 2.109497
+          }
+        ]
+      }
+    },
+    {
+      "command": "python construct.py self-test",
+      "exit_code": 0,
+      "seconds": 0.562791,
+      "result": {
+        "passed": true,
+        "exact_kernel_set_comparisons": 288,
+        "literal_forbidden_terms_comparisons": 116,
+        "isolated_s2_s3_literal_comparisons": 64,
+        "crafted_cost_and_modulus_cases": 4,
+        "tested_moduli": [
+          2,
+          4,
+          8
+        ],
+        "tested_distances": [
+          1,
+          2,
+          3
+        ]
+      }
+    },
+    {
+      "command": "python construct.py search --M 6 --K 1 --distance 2 --seed 20261102 --max-trials 100 --output generated/custom.json",
+      "exit_code": 0,
+      "seconds": 0.212227,
+      "result": {
+        "schema_version": 1,
+        "h": 3,
+        "N": 18,
+        "M": 6,
+        "r": 5,
+        "K": 1,
+        "distance_lower_bound": 2,
+        "construction": {
+          "mode": "random",
+          "seed": 20261102,
+          "max_trials": 100,
+          "accepted_trial": 1
+        }
+      }
+    },
+    {
+      "command": "python construct.py exhaustive --M 2 --K 1 --distance 1 --output generated/tiny.json",
+      "exit_code": 0,
+      "seconds": 0.209866,
+      "result": {
+        "schema_version": 1,
+        "h": 3,
+        "N": 6,
+        "M": 2,
+        "r": 1,
+        "K": 1,
+        "distance_lower_bound": 1,
+        "construction": {
+          "mode": "lexicographic exhaustive enumeration"
+        }
+      }
+    }
+  ]
+}
